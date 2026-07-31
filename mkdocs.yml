@@ -1,0 +1,16 @@
+site_name: Prakash Kumar
+site_description: Technical Writer Portfolio
+site_author: Prakash Kumar
+
+theme:
+  name: material
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Portfolio: portfolio.md
+  - Resume: resume.md
+  - Contact: contact.md
