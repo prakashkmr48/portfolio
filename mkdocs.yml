@@ -2,13 +2,16 @@ site_name: Prakash Kumar
 site_description: Technical Writer | AI Documentation | Developer Documentation
 site_author: Prakash Kumar
 site_url: https://prakashkmr48.github.io/portfolio/
+repo_url: https://github.com/prakashkmr48/portfolio
+repo_name: GitHub Repository
 
 theme:
   name: material
 
   logo: assets/logos/logo.png
   favicon: assets/logos/favicon.png
-  
+
+  language: en
 
   palette:
     - scheme: default
@@ -16,14 +19,18 @@ theme:
       accent: blue
       toggle:
         icon: material/weather-night
-        name: Dark mode
+        name: Switch to dark mode
 
     - scheme: slate
       primary: indigo
       accent: blue
       toggle:
         icon: material/weather-sunny
-        name: Light mode
+        name: Switch to light mode
+
+  font:
+    text: Roboto
+    code: Roboto Mono
 
   features:
     - navigation.tabs
@@ -31,17 +38,25 @@ theme:
     - navigation.expand
     - navigation.instant
     - navigation.top
+
     - search.highlight
     - search.suggest
+
     - content.code.copy
     - content.tabs.link
+
     - toc.follow
+
+    # Repository integration
     - content.action.edit
+    - content.action.view
 
 extra_css:
   - stylesheets/extra.css
 
 extra:
+  generator: false
+
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/prakashkmr48
@@ -55,13 +70,19 @@ plugins:
 markdown_extensions:
   - admonition
   - attr_list
-  - tables
   - md_in_html
-  - pymdownx.details
-  - pymdownx.superfences
+  - tables
+
   - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+
   - pymdownx.tabbed:
       alternate_style: true
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
   - Home: index.md
@@ -96,5 +117,4 @@ nav:
   - Blog: blog/index.md
 
   - Resume: resume.md
-
   - Contact: contact.md
