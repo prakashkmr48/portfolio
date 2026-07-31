@@ -1,5 +1,0 @@
-# Contact
-
-- Email:
-- LinkedIn:
-- GitHub:

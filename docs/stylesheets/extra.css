@@ -1,0 +1,19 @@
+.md-typeset h1 {
+    font-weight: 700;
+}
+
+.md-typeset h2 {
+    margin-top: 2.5rem;
+}
+
+.hero {
+    padding: 2rem 0;
+}
+
+.skill-badge {
+    display: inline-block;
+    margin: 4px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
